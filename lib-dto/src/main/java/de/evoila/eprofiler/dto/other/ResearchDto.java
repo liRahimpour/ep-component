@@ -1,14 +1,14 @@
 package de.evoila.eprofiler.dto.other;
 
-import de.evoila.eprofiler.dto.common.Url;
+import de.evoila.eprofiler.dto.common.UrlDto;
 
 import java.util.Date;
 
-public class Research {
+public class ResearchDto {
 
     private String researchTitle;
     private String publisher;
-    private Url researchUrl;
+    private UrlDto researchUrl;
     private Date date;
     private String description;
 
@@ -28,11 +28,11 @@ public class Research {
         this.publisher = publisher;
     }
 
-    public Url getResearchUrl() {
+    public UrlDto getResearchUrl() {
         return researchUrl;
     }
 
-    public void setResearchUrl(Url researchUrl) {
+    public void setResearchUrl(UrlDto researchUrl) {
         this.researchUrl = researchUrl;
     }
 
@@ -54,12 +54,12 @@ public class Research {
 
     @Override
     public String toString() {
-        return "Research{" +
+        return "ResearchDto{" +
                 "researchTitle='" + researchTitle + '\'' +
                 ", publisher='" + publisher + '\'' +
                 ", researchUrl=" + researchUrl +
                 ", date=" + date +
-                ", Description='" + description + '\'' +
+                ", description='" + description + '\'' +
                 '}';
     }
 }

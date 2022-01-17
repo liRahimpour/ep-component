@@ -3,7 +3,7 @@ package de.evoila.eprofiler.dto.skill;
 import de.evoila.eprofiler.dto.common.enums.LanguageLevel;
 import de.evoila.eprofiler.dto.common.enums.LanguageName;
 
-public class Language {
+public class LanguageDto {
 
     private LanguageName languageName;
     private LanguageLevel languageLevel;
@@ -26,7 +26,7 @@ public class Language {
 
     @Override
     public String toString() {
-        return "Language{" +
+        return "LanguageDto{" +
                 "language=" + languageName +
                 ", languageLevel=" + languageLevel +
                 '}';

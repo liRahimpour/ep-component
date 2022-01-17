@@ -2,7 +2,7 @@ package de.evoila.eprofiler.dto.common;
 
 import java.util.Date;
 
-public class Duration {
+public class DurationDto {
 
     private Date from;
     private Date to;
@@ -25,7 +25,7 @@ public class Duration {
 
     @Override
     public String toString() {
-        return "Duration{" +
+        return "DurationDto{" +
                 "from=" + from +
                 ", to=" + to +
                 '}';

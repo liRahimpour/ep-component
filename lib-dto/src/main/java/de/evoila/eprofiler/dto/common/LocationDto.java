@@ -2,7 +2,7 @@ package de.evoila.eprofiler.dto.common;
 
 import de.evoila.eprofiler.dto.common.enums.Country;
 
-public class Location {
+public class LocationDto {
 
     private Country land;
     private String city;
@@ -25,7 +25,7 @@ public class Location {
 
     @Override
     public String toString() {
-        return "Location{" +
+        return "LocationDto{" +
                 "land=" + land +
                 ", city='" + city + '\'' +
                 '}';

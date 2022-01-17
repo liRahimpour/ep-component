@@ -1,11 +1,11 @@
 package de.evoila.eprofiler.dto.common;
 
-public class Address {
+public class AddressDto {
 
     private String street;
     private String nr;
     private String postalCode;
-    private Location city;
+    private LocationDto city;
 
     public String getStreet() {
         return street;
@@ -31,17 +31,17 @@ public class Address {
         this.postalCode = postalCode;
     }
 
-    public Location getCity() {
+    public LocationDto getCity() {
         return city;
     }
 
-    public void setCity(Location city) {
+    public void setCity(LocationDto city) {
         this.city = city;
     }
 
     @Override
     public String toString() {
-        return "Address{" +
+        return "AddressDto{" +
                 "street='" + street + '\'' +
                 ", nr='" + nr + '\'' +
                 ", postalCode='" + postalCode + '\'' +

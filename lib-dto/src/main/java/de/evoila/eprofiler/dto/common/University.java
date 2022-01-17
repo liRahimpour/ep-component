@@ -3,7 +3,7 @@ package de.evoila.eprofiler.dto.common;
 public class University {
 
     private String universityName;
-    private Location location;
+    private LocationDto location;
 
     public String getUniversityName() {
         return universityName;
@@ -13,11 +13,11 @@ public class University {
         this.universityName = universityName;
     }
 
-    public Location getLocation() {
+    public LocationDto getLocation() {
         return location;
     }
 
-    public void setLocation(Location location) {
+    public void setLocation(LocationDto location) {
         this.location = location;
     }
 

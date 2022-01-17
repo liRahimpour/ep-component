@@ -2,7 +2,7 @@ package de.evoila.eprofiler.dto.skill;
 
 import de.evoila.eprofiler.dto.common.enums.Level;
 
-public class Skill {
+public class SkillDto {
 
     private String skillName;
     private Level level;
@@ -25,7 +25,7 @@ public class Skill {
 
     @Override
     public String toString() {
-        return "Skill{" +
+        return "SkillDto{" +
                 "skillName='" + skillName + '\'' +
                 ", level=" + level +
                 '}';

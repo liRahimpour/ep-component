@@ -1,15 +1,15 @@
 package de.evoila.eprofiler.dto.education;
 
-import de.evoila.eprofiler.dto.common.Duration;
+import de.evoila.eprofiler.dto.common.DurationDto;
 import de.evoila.eprofiler.dto.common.University;
 import de.evoila.eprofiler.dto.common.enums.Degree;
 
-public class EducationalBackground {
+public class EducationalBackgroundDto {
     private String courseOfStudy;
     private Degree degree; // TODO opt.
     private String description; //TODO  begrenzte anzahl chars opt.
     private University university;
-    private Duration duration;
+    private DurationDto duration;
     private Boolean present; //TODO default false
 
     public String getCourseOfStudy() {
@@ -44,11 +44,11 @@ public class EducationalBackground {
         this.university = university;
     }
 
-    public Duration getDuration() {
+    public DurationDto getDuration() {
         return duration;
     }
 
-    public void setDuration(Duration duration) {
+    public void setDuration(DurationDto duration) {
         this.duration = duration;
     }
 
@@ -62,13 +62,13 @@ public class EducationalBackground {
 
     @Override
     public String toString() {
-        return "EducationalBackground{" +
+        return "EducationalBackgroundDto{" +
                 "courseOfStudy='" + courseOfStudy + '\'' +
                 ", degree=" + degree +
                 ", description='" + description + '\'' +
                 ", university=" + university +
                 ", duration=" + duration +
-                ", Present=" + present +
+                ", present=" + present +
                 '}';
     }
 }
