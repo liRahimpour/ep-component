@@ -1,6 +1,6 @@
 package de.evoila.eprofiler.dto.common;
 
-public class Url {
+public class UrlDto {
 
     private String name;
     private String urlString;
@@ -23,9 +23,9 @@ public class Url {
 
     @Override
     public String toString() {
-        return "Url{" +
+        return "UrlDto{" +
                 "name='" + name + '\'' +
-                ", Url='" + urlString + '\'' +
+                ", UrlDto='" + urlString + '\'' +
                 '}';
     }
 }

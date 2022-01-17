@@ -1,12 +1,12 @@
 package de.evoila.eprofiler.dto.basicinfo;
 
-import de.evoila.eprofiler.dto.common.Url;
+import de.evoila.eprofiler.dto.common.UrlDto;
 
-public class SocialNetwork {
+public class SocialNetworkDto {
     //TODO:alles opt.
     private String socialNetworkName; // TODO:enum opt.
     private String socialNetworkId; //TODO:irgendwelche validation je nach network opt.
-    private Url socialNetworkProfileUrl; //TODO:URL validation opt.
+    private UrlDto socialNetworkProfileUrl; //TODO:URL validation opt.
     //qrCode; //TODO:bild opt. irgendwie das build hochladen
 
 
@@ -26,17 +26,17 @@ public class SocialNetwork {
         this.socialNetworkId = socialNetworkId;
     }
 
-    public Url getSocialNetworkProfileUrl() {
+    public UrlDto getSocialNetworkProfileUrl() {
         return socialNetworkProfileUrl;
     }
 
-    public void setSocialNetworkProfileUrl(Url socialNetworkProfileUrl) {
+    public void setSocialNetworkProfileUrl(UrlDto socialNetworkProfileUrl) {
         this.socialNetworkProfileUrl = socialNetworkProfileUrl;
     }
 
     @Override
     public String toString() {
-        return "SocialNetwork{" +
+        return "SocialNetworkDto{" +
                 "socialNetworkName='" + socialNetworkName + '\'' +
                 ", socialNetworkId='" + socialNetworkId + '\'' +
                 ", socialNetworkProfileUrl=" + socialNetworkProfileUrl +

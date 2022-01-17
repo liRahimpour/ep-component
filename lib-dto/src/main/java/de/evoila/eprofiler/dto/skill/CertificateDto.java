@@ -2,7 +2,7 @@ package de.evoila.eprofiler.dto.skill;
 
 import java.util.Date;
 
-public class Certificate {
+public class CertificateDto {
 
     private String certificateTitle;
     private Date passingDate;
@@ -25,7 +25,7 @@ public class Certificate {
 
     @Override
     public String toString() {
-        return "Certificate{" +
+        return "CertificateDto{" +
                 "certificateTitle='" + certificateTitle + '\'' +
                 ", passingDate=" + passingDate +
                 '}';

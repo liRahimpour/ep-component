@@ -4,7 +4,7 @@ import de.evoila.eprofiler.dto.common.enums.Sex;
 
 import java.util.Date;
 
-public class Basicinfo {
+public class BasicinfoDto {
 
     private String firstname;
     private String surname;
@@ -72,7 +72,7 @@ public class Basicinfo {
 
     @Override
     public String toString() {
-        return "Basicinfo{" +
+        return "BasicinfoDto{" +
                 "firstname='" + firstname + '\'' +
                 ", surname='" + surname + '\'' +
                 ", evoilaJobTitleEn='" + evoilaJobTitleEn + '\'' +

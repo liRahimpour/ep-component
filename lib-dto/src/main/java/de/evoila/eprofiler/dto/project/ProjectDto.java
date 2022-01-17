@@ -1,32 +1,24 @@
 package de.evoila.eprofiler.dto.project;
 
-import de.evoila.eprofiler.dto.common.Duration;
-import de.evoila.eprofiler.dto.common.Location;
+import de.evoila.eprofiler.dto.common.DurationDto;
+import de.evoila.eprofiler.dto.common.LocationDto;
 import de.evoila.eprofiler.dto.common.enums.Industry;
 
-public class Project {
+public class ProjectDto {
 
     private String projectTitle;
-    private Duration duration;
+    private DurationDto duration;
     private Industry industry;
     private String employer;
-    private Location location;
+    private LocationDto location;
     private String role;
     private String description; //TODO: Opt.
 
-    public String getProjectTitle() {
-        return projectTitle;
-    }
-
-    public void setProjectTitle(String projectTitle) {
-        this.projectTitle = projectTitle;
-    }
-
-    public Duration getDuration() {
+    public DurationDto getDuration() {
         return duration;
     }
 
-    public void setDuration(Duration duration) {
+    public void setDuration(DurationDto duration) {
         this.duration = duration;
     }
 
@@ -46,11 +38,11 @@ public class Project {
         this.employer = employer;
     }
 
-    public Location getLocation() {
+    public LocationDto getLocation() {
         return location;
     }
 
-    public void setLocation(Location location) {
+    public void setLocation(LocationDto location) {
         this.location = location;
     }
 
@@ -70,9 +62,17 @@ public class Project {
         this.description = description;
     }
 
+    public String getProjectTitle() {
+        return projectTitle;
+    }
+
+    public void setProjectTitle(String projectTitle) {
+        this.projectTitle = projectTitle;
+    }
+
     @Override
     public String toString() {
-        return "Project{" +
+        return "ProjectDto{" +
                 "projectTitle='" + projectTitle + '\'' +
                 ", duration=" + duration +
                 ", industry=" + industry +

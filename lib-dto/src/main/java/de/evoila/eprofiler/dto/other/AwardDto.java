@@ -1,14 +1,14 @@
 package de.evoila.eprofiler.dto.other;
 
-import de.evoila.eprofiler.dto.common.Url;
+import de.evoila.eprofiler.dto.common.UrlDto;
 
 import java.util.Date;
 
-public class Award {
+public class AwardDto {
 
     private Date year;
     private String awardName;
-    private Url awardUrl;
+    private UrlDto awardUrl;
 
     public Date getYear() {
         return year;
@@ -26,17 +26,17 @@ public class Award {
         this.awardName = awardName;
     }
 
-    public Url getAwardUrl() {
+    public UrlDto getAwardUrl() {
         return awardUrl;
     }
 
-    public void setAwardUrl(Url awardUrl) {
+    public void setAwardUrl(UrlDto awardUrl) {
         this.awardUrl = awardUrl;
     }
 
     @Override
     public String toString() {
-        return "Award{" +
+        return "AwardDto{" +
                 "year=" + year +
                 ", awardName='" + awardName + '\'' +
                 ", awardUrl=" + awardUrl +

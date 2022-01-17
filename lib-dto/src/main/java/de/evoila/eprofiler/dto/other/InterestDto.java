@@ -1,6 +1,6 @@
 package de.evoila.eprofiler.dto.other;
 
-public class Interest {
+public class InterestDto {
 
     private String hobby;
 
@@ -14,7 +14,7 @@ public class Interest {
 
     @Override
     public String toString() {
-        return "Interest{" +
+        return "InterestDto{" +
                 "hobby='" + hobby + '\'' +
                 '}';
     }

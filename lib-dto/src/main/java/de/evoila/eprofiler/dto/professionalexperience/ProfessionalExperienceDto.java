@@ -1,20 +1,20 @@
 package de.evoila.eprofiler.dto.professionalexperience;
 
-import de.evoila.eprofiler.dto.common.Duration;
-import de.evoila.eprofiler.dto.common.Location;
-import de.evoila.eprofiler.dto.common.Url;
+import de.evoila.eprofiler.dto.common.DurationDto;
+import de.evoila.eprofiler.dto.common.LocationDto;
+import de.evoila.eprofiler.dto.common.UrlDto;
 import de.evoila.eprofiler.dto.common.enums.Industry;
 
-public class ProfessionalExperience {
+public class ProfessionalExperienceDto {
 
     private String jobTitle;
     private String employmentStatus; //TODO: enum/constant
     private String description; //TODO:  opt.
     private String companyName;
     private Industry industry; //TODO: enum/constant
-    private Location location;
-    private Url website; //TODO:opt.
-    private Duration duration;
+    private LocationDto location;
+    private UrlDto website; //TODO:opt.
+    private DurationDto duration;
     private Boolean present; //TODO:  default false
 
     public String getJobTitle() {
@@ -57,27 +57,27 @@ public class ProfessionalExperience {
         this.industry = industry;
     }
 
-    public Location getLocation() {
+    public LocationDto getLocation() {
         return location;
     }
 
-    public void setLocation(Location location) {
+    public void setLocation(LocationDto location) {
         this.location = location;
     }
 
-    public Url getWebsite() {
+    public UrlDto getWebsite() {
         return website;
     }
 
-    public void setWebsite(Url website) {
+    public void setWebsite(UrlDto website) {
         this.website = website;
     }
 
-    public Duration getDuration() {
+    public DurationDto getDuration() {
         return duration;
     }
 
-    public void setDuration(Duration duration) {
+    public void setDuration(DurationDto duration) {
         this.duration = duration;
     }
 
@@ -91,7 +91,7 @@ public class ProfessionalExperience {
 
     @Override
     public String toString() {
-        return "ProfessionalExperience{" +
+        return "ProfessionalExperienceDto{" +
                 "jobTitle='" + jobTitle + '\'' +
                 ", employmentStatus='" + employmentStatus + '\'' +
                 ", description='" + description + '\'' +

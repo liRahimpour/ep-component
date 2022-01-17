@@ -1,15 +1,15 @@
 package de.evoila.eprofiler.dto.basicinfo;
 
-import de.evoila.eprofiler.dto.common.Address;
-import de.evoila.eprofiler.dto.common.Url;
+import de.evoila.eprofiler.dto.common.AddressDto;
+import de.evoila.eprofiler.dto.common.UrlDto;
 
-public class Contacts {
+public class ContactsDto {
 
     private String email; //TODO: validation
     String mobilePhone; //TODO:  (Phonevalidation?)
     private String tel; //TODO: (Phonevalidation?) opt.
-    private Url website; //TODO:validation? opt.
-    private Address address; //TODO: Adressv validation opt.
+    private UrlDto website; //TODO:validation? opt.
+    private AddressDto address; //TODO: Adressv validation opt.
 
     public String getEmail() {
         return email;
@@ -35,25 +35,25 @@ public class Contacts {
         this.tel = tel;
     }
 
-    public Url getWebsite() {
+    public UrlDto getWebsite() {
         return website;
     }
 
-    public void setWebsite(Url website) {
+    public void setWebsite(UrlDto website) {
         this.website = website;
     }
 
-    public Address getAddress() {
+    public AddressDto getAddress() {
         return address;
     }
 
-    public void setAddress(Address address) {
+    public void setAddress(AddressDto address) {
         this.address = address;
     }
 
     @Override
     public String toString() {
-        return "Contacts{" +
+        return "ContactsDto{" +
                 "email='" + email + '\'' +
                 ", mobilePhone='" + mobilePhone + '\'' +
                 ", tel='" + tel + '\'' +
